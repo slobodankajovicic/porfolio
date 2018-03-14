@@ -1,0 +1,186 @@
+.work-section{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.55)), 
+                      $background-image-work-section;
+    background-size: cover;
+    background-position: 80%;
+    width: 100%;
+    padding: 150px 0px;
+
+    @include respond-to($tablet-portrait) {
+      height: 100%;
+      padding: 20px 0px 0px;
+    }
+    a {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        overflow: hidden;
+        top: 5px;
+    }
+    a:hover:after,
+    a:focus:after,
+    a:active:after {
+        width: 100%;
+        color: $orange-color;
+    }
+}
+.work-item{
+    margin: 10px 20px 10px 0px;
+    position: relative;
+    @include respond-to($tablet-portrait) {
+      padding: 0px 25px !important;
+    }
+
+    & img{
+      border-radius: 0px;
+    }
+}
+.work-item .img-overlay{
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.9);
+    transition: all .5s;
+    overflow: hidden;
+    transition: all .5s;
+    text-align: center;
+    @include respond-to($tablet-portrait) {
+      left: 25px;
+      right: 25px;
+      width: auto;
+    }
+}
+.work-item:hover .img-overlay{
+    height: 100%;
+}
+.work-item .img-overlay a{
+    margin-top: 33%
+}
+.work-item .img-overlay a:hover,
+.work-item .img-overlay a:focus{
+    text-decoration: none;
+}
+@keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      left: 20%;
+    }
+    100% {
+      opacity: 1;
+      left: 0;
+    }
+  }
+
+  .photo{
+    position: absolute;
+    left: 22%;
+    display: block;
+    margin-top: 30%;
+  }
+  
+  .photo img{
+    width: 200px;
+    height: 280px;
+    object-fit: cover;
+    // filter: grayscale(100%) contrast(120%);
+    box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
+    display: block;
+    transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    margin-top: -10px;
+  }
+  
+  .photo:hover img{
+    box-shadow: 1px 1px 10px 0 rgba(0,0,0,.1);
+  }
+  
+  .photo .glow-wrap{
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    margin-top: -10px;
+  }
+  
+  .photo .glow{
+    display: block;
+    position:absolute;
+    width: 40%;
+    height: 200%;
+    background: rgba(255,255,255,.2);
+    top: 0;
+    filter: blur(5px);
+    transform: rotate(45deg) translate(-450%, 0);
+    transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  
+  .photo:hover .glow{
+    transform: rotate(45deg) translate(450%, 0);
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  
+  .photo:hover img,
+  .photo:hover .glow-wrap{
+    margin-top: 0;
+  }
+  
+  .photo h1{
+    position: absolute;
+    z-index: 1;
+    transform: translate(-25%, -65%);
+    margin: 0;
+    line-height: 1.2;
+    color: $orange-color;
+  }
+.about-me-section{
+    background:linear-gradient(
+      rgba(0, 0, 0, 0.85), 
+      rgba(0, 0, 0, 0.55)
+    ), $background-image-about-section;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 150px 0px 0px;
+
+    @include respond-to($tablet-portrait) {
+      padding: 20px 0px 0px;
+    }
+    & .imagery{
+      position: relative;
+      @include respond-to($tablet-portrait) {
+        min-height: 350px;
+      }
+    } 
+    & .description-content{
+      margin: 70px 0px 0px 50px;
+      color: #fff;
+      font-family: 'Raleway', sans-serif;
+
+      @include respond-to($tablet-portrait) {
+        margin: 70px 25px;
+        text-align: justify;
+      }
+    } 
+}
+
+.social-media{
+  padding-top: 50px;
+  text-align: center;
+  & li{
+    padding-right: 30px;
+    & a{
+      color: #fff;
+      font-size: 24px;
+      vertical-align: bottom;
+      &:hover{
+        color: $orange-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+video{
+    width: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+h1{
+    font-weight: lighter;
+}
+
+form.form{
+    margin-top: 50px;
+    font-family: 'Raleway', sans-serif;
+
+    @include respond-to($tablet-portrait) {
+        margin: 50px 25px;
+    }
+    & input{
+        color: #fff;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid #fff;
+        border-radius: 0px;
+        height: 50px;
+        letter-spacing: 1px;
+        font-size: 14px;
+        text-transform: uppercase;
+
+        &:focus{
+            background: transparent;
+            color: #fff;
+            border-bottom: 2px solid $orange-color;
+        }
+    }
+
+    & textarea{
+        background-color: transparent;
+        border-radius: 0px;
+        border: 2px solid #fff; 
+        letter-spacing: 1px;
+        font-size: 14px;        
+        text-transform: uppercase;
+
+        &:focus{
+            background: transparent;
+            color: #fff;
+            border: 2px solid $orange-color;
+        }        
+    }
+
+    & ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        color:    #fff;
+    }
+    & :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+       color:    #fff;
+       opacity:  1;
+    }
+    & ::-moz-placeholder { /* Mozilla Firefox 19+ */
+       color:    #fff;
+       opacity:  1;
+    }
+    & :-ms-input-placeholder { /* Internet Explorer 10-11 */
+       color:    #fff;
+    }
+    & ::-ms-input-placeholder { /* Microsoft Edge */
+       color:    #fff;
+    }
+    
+    & ::placeholder { /* Most modern browsers support this now. */
+       color:    #fff;
+    }
+
+    & button{
+        width: 100%;
+        border-radius: 0;
+        background-color: $orange-color;
+        border: none;
+        height: 50px;
+        letter-spacing: 1.5px;
+        font-size: 18px;
+        border: 2px solid $orange-color;
+
+        &:hover{
+            color: #fff;
+            background-color: transparent;
+            border: 2px solid $orange-color;
+            cursor: pointer;
+        }
+    }
+}
+
+blockquote {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-style: italic;
+    width: 500px;
+    margin: 0.25em 0;
+    padding: 0.35em 40px;
+    line-height: 1.45;
+    position: relative;
+    color: #ccc;
+    @include respond-to($tablet-portrait) {
+        width: 100%;
+
+    }
+    
+    &:before {
+        display: block;
+        padding-left: 10px;
+        content: "\201C";
+        font-size: 80px;
+        position: absolute;
+        left: -20px;
+        top: -20px;
+        color: #7a7a7a;
+    }
+    & cite {
+        color: #999999;
+        font-size: 14px;
+        display: block;
+        margin-top: 5px;
+
+        &:before {
+            content: "\2014 \2009";
+        }
+    }
+}

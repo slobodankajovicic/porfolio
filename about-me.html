@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Slobodanka Jovicic - About me</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!--Animations CSS -->
+    <link href="http://www.justinaguilar.com/animations/css/animations.css" rel="stylesheet">
+
+    <!--Font awesome CSS -->
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+        <div class="button_container" id="toggle">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+        </div>
+            
+        <div class="overlay" id="overlay">
+            <nav class="overlay-menu">
+                <ul>
+                <li ><a href="index.html">Home</a></li>
+                <li><a href="about-me.html">About</a></li>
+                <li><a href="work.html">Work</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>      
+    <div class="main-content container-fluid about-me-section">
+        <div class="container">
+            <div class="row">
+                <h1 class="page-title">About me</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-12 no-padding">
+                    <div class="imagery">
+                        <div class="photo">
+                            <h1>Slobodanka Jovičić</h1>
+                            <img src="img/me.jpg" />
+                            <div class="glow-wrap">
+                                <i class="glow"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12  no-padding">
+                    <div class="description-content">
+                        <p>Hello! My name is Slobodanka, and I'm a Bosnia-based Web Developer. 
+                            If I'm not freelancing, then I'm working remotely for some of the finest digital agencies for clients all over the world.</p>
+                        <p>I have a diverse set of skills, ranging from design to HTML + CSS/ SCSS + Javascript, all the way to PHP, Wordpress and Magento development.</p>
+                        <p>
+                            I guarantee you: <br/>
+                            - I very quickly understand client needs and provide first mockups <br/>
+                            - I follow best practice to design responsive websites <br/>
+                            - I respect deadlines and delivering time
+                        </p>
+                        <p>I am open to new experience always.</p>
+                        <p>I find myself very communicative, so feel free to contact me.</p>
+
+                        <ul class="list-inline social-media">
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="https://www.facebook.com/slobodanka.jovicic"> 
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/slobodanka-jovicic-b3b339b4/"> 
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="https://www.instagram.com/slobodanka.jovicic/">
+                                    <i class="fab fa-instagram"></i>
+                                </a>    
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="jovicic.slobodanka13@gmail.com">
+                                    <i class="fa fa-envelope"></i>
+                                </a>    
+                            </li>                            
+                        </ul>                    
+                    </div>
+                </div>   
+                <!-- <div class="col-sm-3">
+                    <blockquote>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget leo nunc, nec tempus mi? Curabitur id nisl mi, ut vulputate urna. Quisque porta facilisis tortor, vitae bibendum velit fringilla vitae! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget leo nunc, nec tempus mi? Curabitur id nisl mi, ut vulputate urna. Quisque porta facilisis tortor, vitae bibendum velit fringilla vitae!
+                        <cite>Somebody famous</cite>
+                    </blockquote>                 
+                </div>              -->
+            </div>                        
+        </div>
+    </div>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script>
+    $('#toggle').click(function() {
+        $(this).toggleClass('active');
+        $('#overlay').toggleClass('open');
+    });
+
+    </script>
+</body>
+</html>
