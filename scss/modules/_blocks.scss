@@ -6,6 +6,9 @@
 }
 #cover-overlay h1{
     font-size: 80px;
+    @include respond-to($tablet-portrait) {
+        font-size: 38px !important;
+    }
     & a{
         color: $orange-color;
         &:hover{
